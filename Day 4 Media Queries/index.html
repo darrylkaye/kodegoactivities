@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Magazine</title>
+    <style>
+        header {
+            background-color: red;
+            text-align: center;
+            margin: none;
+            padding: 25px 25px;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(34, 32, 32);
+        }
+
+        .navigation-header {
+            margin: 5px;
+            padding: 10px;
+            font-size: 1em;
+            color: white;
+        }
+
+        .flex-container-section {
+            display: flex;
+            background-color: rgb(131, 224, 131);
+            padding: 0px 5px 5px 5px;
+            gap: 10px;
+        }
+
+        .h2-container{
+            background-color: white;
+            padding: 20px 10px;
+            display: none;
+        }
+
+        .lifestyle{
+            display: block;
+        }
+
+        /* tablet */
+        @media screen and (min-width:600px){
+           header{
+                background-color:blue;
+            }
+            .business{
+                display: block;
+            }
+        }
+        /* laptop */
+        @media screen and (min-width:992px){
+           header{
+                background-color:orange;
+            }
+            .h2-container{
+                display: block;
+            }
+        }
+        /* Desktop */
+        @media screen and (min-width:1200px){
+           header{
+                background-color: rgb(131, 224, 131);
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Online Magazine</h1>
+    </header>
+    <nav>
+        <div class="flex-container">
+            <div class="navigation-header">
+                Home
+            </div>
+            <div class="navigation-header">
+                About Us
+            </div>
+            <div class="navigation-header">
+                Contact
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="flex-container-section">
+        <div class="h2-container lifestyle">
+            <h2>Lifestyle</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure expedita et aspernatur, ea animi
+                    blanditiis. Rem nihil ratione corrupti in odio ipsam? Praesentium saepe quas, aut qui unde eveniet!
+                </p>
+            </div>
+        </div>
+        <div class="h2-container business">
+            <h2>Business</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure expedita et aspernatur, ea animi
+                    blanditiis. Rem nihil ratione corrupti in odio ipsam? Praesentium saepe quas, aut qui unde eveniet!
+                </p>
+            </div>
+        </div>
+        <div class="h2-container sports">
+            <h2>Sports</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure expedita et aspernatur, ea animi
+                    blanditiis. Rem nihil ratione corrupti in odio ipsam? Praesentium saepe quas, aut qui unde eveniet!
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

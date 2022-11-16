@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOTSTRAP FORMS</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container bg-light">
+    <div class="row p-5">
+      <!-- leftside -->
+      <div class="col-md-4">
+        <div class="d-flex justify-content-between">
+          <h3 class="text-primary">Your Cart</h3>
+          <h3> <span class="badge bg-primary rounded-pill">3</span></h3>
+        </div>
+
+        <div class="list-group mb-3">
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Product name</h5>
+            </div>
+            <p class="mb-1">Brief description</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Second Product</h5>
+            </div>
+            <p class="mb-1">Brief description</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Third item</h5>
+            </div>
+            <p class="mb-1">Brief description</p>
+          </a>
+        </div>
+
+        <form action="">
+          <div class="card">
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-secondary" type="button" id="button-addon2">Redeem</button>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- rigth side -->
+      <div class="col-md-8">
+        <div>
+          <h3>Billing address</h3>
+        </div>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputFirstname" class="form-label h6">First name</label>
+            <input type="text" class="form-control" id="inputF
+            irstname">
+          </div>
+          <div class="col-md-6">
+            <label for="inputLastname" class="form-label h6">Last name</label>
+            <input type="text" class="form-control" id="inputLastname">
+          </div>
+          <div class="col-12">
+            <label for="inputUsername" class="form-label h6">Username</label>
+            <div class="input-group ">
+              <div class="input-group-text">@</div>
+              <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="inputEmail" class="form-label h6">Email (Optional)</label>
+            <input type="text" class="form-control" id="inputEmail" placeholder="you@example.com">
+          </div>
+          <div class="col-md-12">
+            <label for="inputBarangay" class="form-label h6">Barangay</label>
+            <input type="text" class="form-control" id="inputBarangay">
+          </div>
+          <div class="col-md-12">
+            <label for="inputCity" class="form-label h6">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputProvince" class="form-label h6">Province</label>
+            <select id="inputProvince" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label h6">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+
+          <div>
+            <hr>
+          </div>
+          <div>
+            <h4>Payment</h4>
+          </div>
+
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label h6" for="flexRadioDefault1">
+                Credit Card
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label h6" for="flexRadioDefault2">
+                Debit Card
+              </label>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="inputCardname" class="form-label h6">Name on card</label>
+              <input type="text" class="form-control" id="inputCardname">
+              <div class="form-text">
+                Full name as displayed on card
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputCardnumber" class="form-label h6">Credit card number</label>
+              <input type="text" class="form-control" id="inputCardnumber">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <label for="inputExpiration" class="form-label h6">Expiration</label>
+              <input type="text" class="form-control" id="inputExpiration">
+            </div>
+            <div class="col-md-2">
+              <label for="inputCVV" class="form-label h6">CVV</label>
+              <input type="text" class="form-control" id="inputCVV">
+            </div>
+            <div>
+              <hr>
+            </div>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Continue to checkout</button>
+          </div>
+      </div>
+    </div>
+
+  </div>
+ 
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

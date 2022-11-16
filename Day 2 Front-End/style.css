@@ -1,0 +1,30 @@
+body{
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ulo{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#ulo img{
+    height: 175px;
+}
+
+h4{
+    background-color: gray;
+    padding: 10px;
+}
+
+.description {
+    font-weight: bold;
+}
+
+    
