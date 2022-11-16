@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Bootstrap 5 Website
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .custom-padding {
+            padding-top: 144px;
+            padding-bottom: 144px;
+        }
+
+        .custom-dark-orange {
+            color: #FC4D02;
+        }
+
+        .custom-button {
+            background: #FF8601;
+            color: white;
+        }
+
+        .custom-button:hover {
+            background: none;
+            border: 1px solid #FF8601;
+            color: #FF8601;
+        }
+
+        .custom-outline-button {
+            border: 1px solid #FF8601;
+            color: #FF8601;
+        }
+
+        .custom-outline-button:hover {
+            background: #FF8601;
+            color: white;
+        }
+
+        .custom-border-radius {
+            border-radius: 16px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body style="background: #FAF0E6;">
+
+    <!-- Navbar -->
+    <header class="container py-2">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <strong>Bryl's <span class="custom-dark-orange">Burgers</span></strong>
+            </a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav menu -->
+            <div id="navbarSupportedContent" class="collapse navbar-collapse d-lg-flex justify-content-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn py-2 px-4 custom-button">Order Now</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="container custom-padding">
+        <div class="row align-items-center">
+            <!-- Hero content -->
+            <div class="col-md-6">
+                <h1 class="pb-2">
+                    Keep Calm & <br>
+                    Eat <span class="custom-dark-orange">Burger ♥</span>
+                </h1>
+                <p class="pb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga accusamus, assumenda voluptas
+                    minus ducimus magni illo laboriosam. Sapiente, quos.
+                </p>
+                <div class="pb-5">
+                    <button class="btn py-2 px-4 custom-button">More Deals</button>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-5">
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
+                </div>
+            </div>
+            <!-- Hero image -->
+            <div class="col-md-6 text-center">
+                <img style="width: 400px"
+                    src="https://images-ext-1.discordapp.net/external/pLq1D6Wf6NHDCA3DQmpEQ0e3yQzYwMxTYUyEiB8tyug/https/www.pinclipart.com/picdir/big/499-4996915_cheeseburger-icon-vector-burger-cartoon-png-clipart.png?width=720&height=619"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="custom-padding" style="background: #FEF4F3;">
+
+        <!-- Products -->
+        <div class="container pb-5">
+            <div class="row text-center mb-5">
+                <h2>
+                    Super <span class="custom-dark-orange">affordable </span>
+                </h2>
+            </div>
+            <!-- Item list -->
+            <div class="row gy-3">
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 custom-border-radius">
+                        <div class="card-body">
+                            <img style="height: 150px" class="img-fluid"
+                                    src="https://media.discordapp.net/attachments/1039102972216483870/1041842750066282716/bg1.png"
+                                    alt="">
+                            <h5 class="card-title">
+                                <strong>Burger 1</strong>
+                            </h5>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                            <p class="card-text fw-bold fs-4 custom-dark-orange">P100</p>
+                            <button class="btn custom-outline-button">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 custom-border-radius">
+                        <div class="card-body">
+                            <img style="height: 150px" class="img-fluid"
+                                src="https://media.discordapp.net/attachments/1039102972216483870/1041843342314582056/bg2.png"
+                                alt="">
+                            <h5 class="card-title"><strong>Burger 2</strong></h5>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                            <p class="card-text fw-bold fs-4 custom-dark-orange">P100</p>
+                            <button class="btn custom-outline-button">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 shadow custom-border-radius">
+                        <div class="card-body">
+                            <img style="height: 150px" class="img-fluid"
+                                src="https://media.discordapp.net/attachments/1039102972216483870/1041843640252772372/bg3.png"
+                                alt="">
+                            <h5 class="card-title"><strong>Burger 3</strong></h5>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                            <p class="card-text fw-bold fs-4 custom-dark-orange">P100</p>
+                            <button class="btn custom-button">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 custom-border-radius">
+                        <div class="card-body">
+                            <img style="height: 150px" class="img-fluid"
+                                src="https://media.discordapp.net/attachments/1039102972216483870/1041843943509344346/bg4.png"
+                                alt="">
+                            <h5 class="card-title"><strong>Burger 4</strong></h5>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                            <p class="card-text fw-bold fs-4 custom-dark-orange">P100</p>
+                            <button class="btn custom-outline-button">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tagline 1 -->
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Tagline content -->
+                <div class="col-lg-6">
+                    <h2 class="pb-2">
+                        Satisfying, juicy<br>
+                        and lip-smacking <span class="custom-dark-orange">burgers</span>
+                    </h2>
+                    <p class="pb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fugiat velit architecto iste id asperiores, in aspernatur iusto
+                        laudantium officiis excepturi.
+                    </p>
+                    <div class="pb-5 pb-lg-0">
+                        <button class="btn py-2 px-4 custom-button">Order Now</button>
+                    </div>
+                </div>
+                <!-- Tagline image -->
+                <div class="col-lg-6 text-center">
+                    <img
+                        src="https://media.discordapp.net/attachments/1039102972216483870/1041847346926981151/bg5.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tagline 2 -->
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Tagline image -->
+                <div class="col-lg-6 text-center pb-5 pb-lg-0">
+                    <img
+                        src="https://media.discordapp.net/attachments/1039102972216483870/1041847948977393795/bg6.png"
+                        alt="">
+                </div>
+                <!-- Tagline content -->
+                <div class="col-lg-6">
+                    <h2 class="pb-2">
+                        Just beef, cheese<br>
+                        and <span class="custom-dark-orange">onions</span>
+                    </h2>
+                    <p class="pb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fugiat velit architecto iste id asperiores, in aspernatur iusto
+                        laudantium officiis excepturi.
+                    </p>
+                    <div>
+                        <button class="btn py-2 px-4 custom-button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tagline 3 -->
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Tagline content -->
+                <div class="col-lg-6">
+                    <h2 class="pb-2">
+                        It’s just pure<br>
+                        in a <span class="custom-dark-orange">burger sense</span>
+                    </h2>
+                    <p class="pb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fugiat velit architecto iste id asperiores, in aspernatur iusto
+                        laudantium officiis excepturi.
+                    </p>
+                    <div class="pb-5 pb-lg-0">
+                        <button class="btn py-2 px-4 custom-button">Order Now</button>
+                    </div>
+                </div>
+                <!-- Tagline image -->
+                <div class="col-lg-6 text-center">
+                    <img
+                        src="https://media.discordapp.net/attachments/1039102972216483870/1041848441619370055/bg7.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <h2>
+                    Our Customers <span class="custom-dark-orange">Review</span>
+                </h2>
+            </div>
+            <!-- Review list -->
+            <div class="row gy-3">
+                <!-- Review 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 p-3 custom-border-radius">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid rounded-circle"
+                                        src="https://images-ext-1.discordapp.net/external/coEU1zNEw9mrkvbgFy3Es1C-IYRRjgtJHHAZcreeR3I/https/cdn1.iconfinder.com/data/icons/avatars-1-5/136/61-1024.png?width=630&height=630"
+                                        alt="">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title"><strong>Customer 1</strong></h5>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 p-3 shadow custom-border-radius">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid rounded-circle"
+                                        src="https://images-ext-1.discordapp.net/external/coEU1zNEw9mrkvbgFy3Es1C-IYRRjgtJHHAZcreeR3I/https/cdn1.iconfinder.com/data/icons/avatars-1-5/136/61-1024.png?width=630&height=630"
+                                        alt="">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title"><strong>Customer 2</strong></h5>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 p-3 custom-border-radius">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="img-fluid rounded-circle"
+                                        src="https://images-ext-1.discordapp.net/external/coEU1zNEw9mrkvbgFy3Es1C-IYRRjgtJHHAZcreeR3I/https/cdn1.iconfinder.com/data/icons/avatars-1-5/136/61-1024.png?width=630&height=630"
+                                        alt="">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title"><strong>Customer 3</strong></h5>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat eaque placeat, voluptates repudiandae rem adipisci.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA (Call to action) -->
+        <div class="container pt-5">
+            <div class="row justify-content-between align-items-center bg-dark p-5 custom-border-radius">
+                <!-- CTA content -->
+                <div class="col-lg-6">
+                    <h2 class="text-white pb-2">
+                        Are You Ready to Buy?
+                    </h2>
+                    <p class="text-white pb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Fugiat velit architecto iste id asperiores, in aspernatur iusto
+                        laudantium officiis excepturi.
+                    </p>
+                    <div class="pb-5 pb-lg-0">
+                        <button class="btn py-2 px-4 custom-button">Buy Now</button>
+                    </div>
+                </div>
+                <!-- CTA image -->
+                <div class="col-lg-6 text-center">
+                    <img style="width: 400px"
+                        src="https://images-ext-1.discordapp.net/external/pLq1D6Wf6NHDCA3DQmpEQ0e3yQzYwMxTYUyEiB8tyug/https/www.pinclipart.com/picdir/big/499-4996915_cheeseburger-icon-vector-burger-cartoon-png-clipart.png?width=720&height=619"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="my-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="row gy-3">
+                    <div class="col-md-4">
+                        <!-- Logo -->
+                        <div class="pb-2">
+                            <a class="navbar-brand" href="#">
+                                <strong>Bryl's <span class="custom-dark-orange">Burgers</span></strong>
+                            </a>
+                        </div>
+                        <!-- Description -->
+                        <p class="pb-2">
+                            We are a burger restaurant based in Bonifacio High Street, Taguig.
+                            We're open Tuesdays to Sundays from 1:00 PM to 2:00 AM.
+                        </p>
+                        <!--  -->
+                        <p><i class="fa-solid fa-location-pin"></i> Bonifacio High Street, Taguig</p>
+                        <p><i class="fa-solid fa-phone"></i> +63 920 1234 123</p>
+                        <p><i class="fa-solid fa-envelope"></i> brylburgers@gmail.com</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row gy-3">
+                            <!-- Our menu -->
+                            <div class="col-md-4">
+                                <h5>Our Menu</h5>
+                                <ul class="navbar-nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">Breakfast</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Lunch</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Dinner</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Special</a></li>
+                                </ul>
+                            </div>
+                            <!-- Information -->
+                            <div class="col-md-4">
+                                <h5>Information</h5>
+                                <ul class="navbar-nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Event</a></li>
+                                </ul>
+                            </div>
+                            <!-- Service -->
+                            <div class="col-md-4">
+                                <h5>Service</h5>
+                                <ul class="navbar-nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Payment</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+            <p class="text-center">
+                <strong>Created by <span class="custom-dark-orange">Group 5</span></strong>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
